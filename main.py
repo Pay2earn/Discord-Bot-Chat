@@ -2,6 +2,10 @@ import os
 import asyncio
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
+
+# โหลด environment variables จากไฟล์ .env
+load_dotenv()
 
 # โหลด token และข้อความจาก environment variable
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
